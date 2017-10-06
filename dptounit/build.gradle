@@ -17,8 +17,6 @@ ext {
     siteUrl = ''
     gitUrl = 'https://github.com/psycoder0001/CoreDev'
 
-    libraryVersion = project.VERSION_NAME
-
     developerId = 'psycoder0001'
     developerName = 'Evren Ozturk'
     developerEmail = 'evren.psycoder@gmail.com'
@@ -51,16 +49,6 @@ android {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
-        }
-    }
-}
-
-publishing {
-    publications {
-        sdkRelease(MavenPublication) {
-            groupId 'com.deepdroid.dptounit'
-            artifactId 'dptounit'
-            artifact 'build/outputs/aar/app-release.aar'
         }
     }
 }
