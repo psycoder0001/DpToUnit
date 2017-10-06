@@ -16,6 +16,9 @@ ext {
 
     siteUrl = ''
     gitUrl = 'https://github.com/psycoder0001/CoreDev'
+
+    libraryVersion = project.VERSION_NAME
+
     developerId = 'psycoder0001'
     developerName = 'Evren Ozturk'
     developerEmail = 'evren.psycoder@gmail.com'
@@ -53,12 +56,8 @@ android {
 }
 
 dependencies {
-    implementation fileTree(dir: 'libs', include: ['*.jar'])
-    androidTestImplementation('com.android.support.test.espresso:espresso-core:3.0.1', {
-        exclude group: 'com.android.support', module: 'support-annotations'
-    })
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
     implementation 'com.android.support:appcompat-v7:26.1.0'
-    testImplementation 'junit:junit:4.12'
 }
 apply from: 'https://raw.githubusercontent.com/nuuneoi/JCenter/master/installv1.gradle'
 apply from: 'https://raw.githubusercontent.com/nuuneoi/JCenter/master/bintrayv1.gradle'
