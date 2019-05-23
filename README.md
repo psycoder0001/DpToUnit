@@ -11,5 +11,5 @@ allprojects {
 
 2. Add next line in modules build.gradle file:
 ```
-    implementation 'com.deepdroid.dptounit:dptounit:1.0.12'
+    implementation 'com.deepdroid.dptounit:dptounit:1.0.13'
 ```
